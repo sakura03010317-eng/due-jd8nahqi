@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ひのブログ</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header>
+		<h1>SHIMOYA OFFICIAL FANPAGE</h1>
+		<nav>
+			<a href="../index.html">HOME</a>
+			<a href="../profile.html">PROFILE</a>
+			<a href="gallery.html">GALLERY</a>
+		</nav>
+	</header>
+
+
+	<main>
+		<section class="gallery">
+			<section class="gallery-header">
+				<h2>Blog Gallery</h2>
+				<img src="gallery_img/blog_main.jpg">
+			</section>
+
+			<div class="card">
+				<a href="gallery_contents/2026.2.22.html">
+					<img src="gallery_img/artist_icon.jpg" alt="下谷妃乃">
+					<div class="info">
+						<h3>下谷妃乃</h3>
+						<p>日々社不コレクション</p>
+						<span>2026.02.22 18:00</span>
+						<p class="excerpt">2月全力でした✨…</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="card">
+				<a href="gallery_contents/2026.2.6.html">
+					<img src="gallery_img/artist_icon.jpg" alt="下谷妃乃">
+					<div class="info">
+						<h3>下谷妃乃</h3>
+						<p>日々社不コレクション</p>
+						<span>2026.02.06 21:00</span>
+						<p class="excerpt">Acid Black cherry FILM LIVE TOUR 2025FINAL…</p>
+					</div>
+				</a>
+			</div>
+
+			<!-- 以下同じ構造でメンバー分追加 -->
+		</section>
+
+
+
+
+
+		<section class="footer">
+			<a href="https://www.instagram.com/71scollection?igsh=c3ppYXBibHJ3M2g4">
+				<div class="SNS button">
+					<svg width="35" height="35" viewBox="0 0 120 65" fill="none" stroke="#fff" stroke-width="6"
+						stroke-linecap="round" stroke-linejoin="round">
+						<!-- 外枠 -->
+						<rect x="10" y="10" width="80" height="80" rx="20"></rect>
+						<!-- レンズ -->
+						<circle cx="50" cy="50" r="18"></circle>
+						<!-- フラッシュ -->
+						<circle cx="72" cy="28" r="6"></circle>
+					</svg>
+					<p>SHIMOYA<br>公式Instagram
+
+					</p>
+				</div>
+			</a>
+
+			<div class="information">
+				<ul>
+					<li><a href="../footer_info/about-fanpage.html">OFFICIAL FANPAGEとは</a></li>
+					<li><a href="../footer_info/faq.html">よくあるご質問</a></li>
+					<li><a href="../footer_info/privacy-policy.html">プライバシーポリシー</a></li>
+				</ul>
+
+				<p>SHIMOYA OFFICIAL FANPAGE Inc.</p>
+
+			</div>
+
+		</section>
+
+
+
+	</main>
+</body>
+
+</html>
+
+
+
+
+<style>
+	body {
+		font-family: "Hiragino Sans", sans-serif;
+		margin: 0;
+		background: #ffffff;
+	}
+
+	body a {
+		text-decoration: none;
+	}
+
+	header {
+		text-align: center;
+		padding: 20px 0;
+		background: white;
+		border-bottom: 1px solid #ddd;
+	}
+
+	nav a {
+		margin: 0 15px;
+		text-decoration: none;
+		color: #444;
+		font-weight: bold;
+	}
+
+	.gallery {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 20px;
+		padding: 40px;
+		background: #f9f9f9;
+	}
+
+	.gallery-header {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+
+	.gallery h2 {
+		text-align: center;
+		font-size: 30px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #000000;
+	}
+
+	.card {
+		background: #fff;
+		border-radius: 12px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		transition: transform 0.2s ease;
+	}
+
+	.card:hover {
+		transform: translateY(-4px);
+	}
+
+	.card a {
+		display: flex;
+		text-decoration: none;
+		color: #333;
+	}
+
+	.card img {
+		width: 120px;
+		height: 120px;
+		margin-top: 10px;
+		margin-left: 12px;
+		border-radius: 12px;
+	}
+
+	.info {
+		padding: 15px;
+	}
+
+	.info h3 {
+		margin: 0;
+		font-size: 1.2em;
+		font-weight: 700;
+	}
+
+	.info p {
+		margin: 4px 0;
+		font-size: 0.9em;
+	}
+
+	.info span {
+		font-size: 0.8em;
+		color: #777;
+	}
+
+	.excerpt {
+		color: #6a6a6a;
+	}
+
+
+	.SNS.button {
+		background-color: #864949;
+		width: 170px;
+		height: 50px;
+		border-radius: 10px;
+		margin-top: 30px;
+		margin-left: 20px;
+		padding: 5px 7px 7px 15px;
+	}
+
+	.button p {
+		color: #fff;
+		font-size: 15px;
+		line-height: 20px;
+		margin-left: 40px;
+		margin-top: -35px;
+	}
+
+	.information ul {
+		margin-top: 40px;
+		font-size: 12px;
+		color: #707070;
+	}
+
+	.information p {
+		text-align: center;
+		font-size: 10px;
+		color: #707070;
+		margin-top: 60px;
+	}
+
+	.information a {
+		color: #707070;
+	}
+</style>
